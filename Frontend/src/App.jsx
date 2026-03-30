@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Board from "./components/Board";
 
-const url = "http://localhost:3000";
+//const url = "http://localhost:3000";
+const url = "https://multiplayer-tic-tac-toe-heh3-8nzzd8x00.vercel.app/";
 
 function App() {
   const [player, setPlayer] = useState("");
