@@ -3,7 +3,7 @@ import axios from "axios";
 import Board from "./components/Board";
 
 //const url = "http://localhost:3000";
-const url = "https://multiplayer-tic-tac-toe-heh3-8nzzd8x00.vercel.app/";
+const url = "https://multiplayer-tic-tac-toe-311q.onrender.com";
 
 function App() {
   const [player, setPlayer] = useState("");
