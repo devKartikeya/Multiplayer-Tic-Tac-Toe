@@ -4,6 +4,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
+
+const PORT = process.env.PORT || 3000;
 
 //GAME STATE
 let game = {
@@ -67,6 +70,6 @@ function checkWin(p) {
   );
 }
 
-app.listen(3000, () => {
-  console.log("Backend running on http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`Backend running on http://localhost:${PORT}`);
 });
